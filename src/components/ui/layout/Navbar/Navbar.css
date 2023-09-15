@@ -1,0 +1,17 @@
+.parent-container{
+    display: flex;
+    justify-content:space-between;
+    width: 80%;
+
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 770px) {
+.parent-container{
+    align-items: center;
+}
+}
+
