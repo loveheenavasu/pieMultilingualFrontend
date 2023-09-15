@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Header from "../Header/Header";
 import Navitem from "./NavItem/Navitem";
-import "./Navbar.css";
+// import "./Navbar.css";
 
 const Navbar = () => {
     const [imgSrc, setImgSrc] = useState<string>("");

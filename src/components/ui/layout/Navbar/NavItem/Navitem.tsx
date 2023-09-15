@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
 import { IconButton, Menu, MenuItem } from '../../../../../../node_modules/@mui/material/index';
-import './Navitem.css';
+// import './Navitem.css';
 
 interface DataItem {
     _id: string;
@@ -11,7 +11,7 @@ interface DataItem {
 
 }
 const Navitem = ({ setImgSrc }: any) => {
-    const [menuData, setMenuData] = useState<DataItem[]>([]);
+    const [menuData, setMenuData] = useState<{ data: DataItem[] }>({ data: [] });
     const [isSearch, setisSearch] = useState<Boolean[]>([]);
     const windowWidth = window.innerWidth
     console.log(menuData, "menuData")

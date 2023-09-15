@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-import "./HomeContainer.css";
+// import "./HomeContainer.css";
 
 import {
     Box,
@@ -11,7 +11,7 @@ import Navbar from "../Navbar/Navbar";
 import Form from "../../Form/Form";
 
 const HomeContainer = ({ setLoading }: any) => {
-    const [imageData, setImageData] = useState<ImageData | null>(null);
+    const [imageData, setImageData] = useState<{[key:string]: string} | null>(null);
 
     console.log(imageData, imageData);
     const fetchData = async () => {

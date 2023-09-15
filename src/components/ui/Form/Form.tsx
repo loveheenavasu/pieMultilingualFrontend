@@ -3,7 +3,7 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
-import './Form.css'
+// import './Form.css'gi
 
 const VisuallyHiddenInput = styled('input')({
     clip: 'rect(0 0 0 0)',
@@ -38,7 +38,7 @@ const Form = () => {
                         <input className='form-common' placeholder='Phone' type='tel' id='phone' name='phone' required />
                     </div>
                     <div className='form-message'>
-                        <textarea id='message' name='message' placeholder='Write Paragragh' rows='8' required></textarea>
+                        <textarea id='message' name='message' placeholder='Write Paragragh' rows={8} required></textarea>
                     </div>
                     <div className='form-file'>
                         <Button component="label" variant="contained" startIcon={<CloudUploadIcon />}>

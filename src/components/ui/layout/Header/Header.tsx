@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import "./Header.css";
+// import "./Header.css";
 
 interface Data {
     name: string;
