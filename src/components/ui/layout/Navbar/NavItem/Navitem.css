@@ -5,10 +5,16 @@
     margin: 0px 10px;
 }
 .items-link{
-    margin-left: 20px;
-    border-right: 2px solid white;
+    /* margin-left: 20px; */
+    border-right: 2px solid rgb(248 209 158);
+    /* border-radius: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 .items-link:last-child {
+
     border-right: none;
 }
 
@@ -18,6 +24,9 @@
 .nav-link{
     display: flex;
     color:#ed7238;
+}
+.nav-link:first-child{
+    margin-left: 1rem;
 }
 
 .container-item-search{

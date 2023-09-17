@@ -15,13 +15,18 @@ const Navbar = () => {
         <div className="nav-wrapper">
           <div className="parent-container">
             <div className="nav-bar-container">
-              <div className="logo">
-                <img
-                  style={{ height: "45%", width: "45%" }}
-                  src={getImageURL(imgSrc)}
-                  alt="image not found"
-                />
-              </div>
+              {/* <div className="top-navbar-logo-container"> */}
+              <img
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "cover",
+                  overflow: "hidden",
+                }}
+                src={getImageURL(imgSrc)}
+                alt="image not found"
+              />
+              {/* </div> */}
             </div>
             <div>
               <Navitem setImgSrc={setImgSrc} />
