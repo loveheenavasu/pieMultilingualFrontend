@@ -31,7 +31,7 @@ const HomeContainer = () => {
         throw new Error("Network response was not ok");
       }
 
-      const data = await response.json();
+      const data = await response?.json?.();
 
       setImageData(data);
     } catch (error) {
@@ -64,11 +64,11 @@ const HomeContainer = () => {
                   <div className="client-logo-container">
                     <p className="trusted-text ">Trusted by Client</p>
                     <div className="client-wrapper">
-                      {imageData?.data.map((ele) => (
-                        <div key={ele.imageUrl} className="logo-wrapper">
+                      {imageData?.data?.map((ele) => (
+                        <div key={ele?.imageUrl} className="logo-wrapper">
                           <img
                             className="client-logo"
-                            src={getImageURL(ele.imageUrl)}
+                            src={getImageURL(ele?.imageUrl)}
                             alt={`Client Logo `}
                           />
                         </div>
